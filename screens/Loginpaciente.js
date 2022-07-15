@@ -1,9 +1,8 @@
 import React from "react";
-import { View,Text} from "react-native";
-import { TextInput } from "react-native-web";
+import { View,Text,TextInput} from "react-native";
 import Boton from '../componentes/Boton';
 
-export default function Loginpaciente () {
+export default function LoginPaciente () {
     return(
         <View>
             <Text>App Medical</Text>
@@ -17,7 +16,6 @@ export default function Loginpaciente () {
             style={{borderWidth:1,borderColor:'white', padding :5,marginTop:10}}></TextInput>
             
             <Boton text="Iniciar Sesion"/>
-            <Text>Forgor Password?</Text>
             <Text>¿No Tienes una Cuenta?</Text>
             <Text>Sign up</Text>
         </View>

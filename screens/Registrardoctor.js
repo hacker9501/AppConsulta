@@ -2,7 +2,7 @@ import React from "react";
 import { View,Text,Image } from "react-native";
 import Boton from '../componentes/Boton';
 
-export default function Registrardoctor (){
+export default function RegistrarDoctor (){
     return(
         <View>
             <Text>App Medical</Text>
