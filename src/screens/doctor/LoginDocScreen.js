@@ -4,7 +4,7 @@ import { Title } from 'react-native-paper';
 import FormButton from "../../components/FormButton";
 import FormInput from "../../components/FormInput";
 
-const LoginScreen =({navigation})=>{
+const LoginDocScreen =({navigation})=>{
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
 const onHandleLogin =()=>{
@@ -27,7 +27,7 @@ const onHandleLogin =()=>{
 
             />
             <FormButton 
-            title="Logindoc"
+            title="Login"
             modeValue="contained"
             onPress={onHandleLogin}
             labelStyle={styles.loginButtonLabel}
@@ -43,7 +43,7 @@ const onHandleLogin =()=>{
     )
 }
 
-export default LoginScreen;
+export default LoginDocScreen;
 
 const styles = StyleSheet.create({
     container: {
@@ -61,6 +61,6 @@ const styles = StyleSheet.create({
       fontSize: 22
     },
     navButtonText: {
-      fontSize: 14
+      fontSize: 13
     }
   });

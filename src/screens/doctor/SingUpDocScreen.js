@@ -1,11 +1,11 @@
 import React,{useState} from "react";
 import { View,StyleSheet} from "react-native";
-import { Picker } from "react-native";
+import {Picker} from '@react-native-picker/picker';
 import { Title,IconButton } from 'react-native-paper';
 import FormButton from "../../components/FormButton";
 import FormInput from "../../components/FormInput";
 
-const SingUpScreen =({navigation})=>{
+const SingUpDocScreen =({navigation})=>{
     const [name,setName]=useState("")
     const [email,setEmail]=useState("")
     const [password,setPassword]=useState("")
@@ -37,9 +37,8 @@ const onHandleSingup =()=>{
             style={{ height: 50, width: 255 }}
             onValueChange={(itemValue) => setSelectedValue(itemValue)}
             >
-            <Picker.Item label="Profesion" value="profesion" />
-            <Picker.Item label="Psicologo" value="psicologo" />
             <Picker.Item label="Fisioterapeuta" value="fisioterapeuta" />
+            <Picker.Item label="Psicólogo" value="psicologo" />
             </Picker>
 
             <FormInput 
@@ -72,7 +71,7 @@ const onHandleSingup =()=>{
     )
 }
 
-export default SingUpScreen;
+export default SingUpDocScreen;
 
 const styles = StyleSheet.create({
     container: {
