@@ -1,6 +1,7 @@
 import React from 'react';
 import { View,Text, StyleSheet, Dimensions, Image } from "react-native";
 import {Button } from 'react-native-paper'
+import FormButton from '../components/FormButton';
 
 const { width, height } = Dimensions.get('screen');
 
@@ -14,22 +15,20 @@ const Home = ({navigation}) => {
                 uri: 'https://img.freepik.com/vector-gratis/doctor-lindo-mujer-que-sostiene-ilustracion-arte-historieta-dibujada-mano-vacuna-jeringa_56104-966.jpg',
               }}
            />
-           <Button mode="contained"
+           <FormButton mode="contained"
            color="#000"
            buttonColor="black"
            style={styles.button}
            labelStyle={{ color: "white", fontSize: 18 }}
            contentStyle={styles.buttonContainer}
            onPress={() => navigation.navigate('Login')}
-           >
-            Sign Up
-           </Button>
-           <Button
+           title='Sign Up'
+           />
+           <FormButton
             labelStyle={{ color: "#4361ee", fontSize: 14 }}
             onPress={() => navigation.navigate('Logindoc')}
-           >
-            ¿Eres doctor? Sing up
-           </Button>
+            title='¿Eres doctor? Sing up'
+           />
         </View>
     )
 }
